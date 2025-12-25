@@ -1,0 +1,109 @@
+{
+  "+212608595612": {
+    "created": "2025-12-24T21:01:35.707475",
+    "messages": [
+      {
+        "user": "Salut",
+        "bot": "Salut ! 👋 Super de te revoir ! Qu'est-ce que je peux faire pour toi aujourd'hui ? Je suis un bot de Yann, et je suis là pour aider, surtout pour les tâches de Monica ! 😉\n\nOn continue sur notre lancée de \"Pierre-Feuille-Ciseaux\" ou tu as une autre idée géniale en tête ? N'hésite pas à me dire ! 🎮✨",
+        "time": "2025-12-25T14:23:08.995241"
+      },
+      {
+        "user": "Salut",
+        "bot": "Salut ! 👋 C'est génial de te revoir ! 😊 Qu'est-ce que je peux faire pour toi aujourd'hui ? Je suis le bot de Yann et mon but est de t'aider, surtout Monica, dans toutes tes tâches ! 🌟\n\nOn reprend là où on en était avec notre super jeu \"Pierre-Feuille-Ciseaux\", ou tu as peut-être une autre question ou une idée cool à partager avec moi ? Je suis prêt à tout ! 🚀🎮",
+        "time": "2025-12-25T14:27:33.858218"
+      },
+      {
+        "user": "Oui tu peux coder ça en python stp?",
+        "bot": "Oui, carrément ! C'est une excellente idée de coder ça en Python, c'est super pour les débutants et très puissant. 🐍\n\nAlors, pour commencer, voici un petit bout de code Python super simple pour gérer les choix du jeu \"Pierre-Feuille-Ciseaux\" (Rock-Paper-Scissors en anglais, c'est souvent comme ça qu'on le voit dans les tutos, mais on peut tout à fait garder les termes français).\n\n```python\nimport random # On importe le module 'random' pour que l'ordinateur puisse faire un choix aléatoire\n\ndef jouer_pierre_feuille_ciseaux():\n    choix_possibles = [\"pierre\", \"feuille\", \"ciseaux\"]\n    \n    # L'ordinateur fait son choix au hasard\n    choix_ordinateur = random.choice(choix_possibles) \n    \n    # On demande au joueur de choisir\n    choix_joueur = input(\"Choisis entre pierre, feuille, ou ciseaux : \").lower() # .lower() pour transformer la saisie en minuscules et éviter les erreurs\n    \n    print(f\"Tu as choisi : {choix_joueur.capitalize()}\") # .capitalize() met la première lettre en majuscule, c'est plus joli\n    print(f\"L'ordinateur a choisi : {choix_ordinateur.capitalize()}\")\n\n    # Plus tard, on mettra la logique pour déterminer le gagnant ici ! 😉\n\n# Pour tester, on appelle la fonction :\njouer_pierre_feuille_ciseaux()\n```\n\n**Comment ça marche, très simplement :**\n\n1.  J'ai importé `random` : c'est un module magique qui permet à l'ordinateur de \"tirer au sort\" son choix. 🎲\n2.  J'ai créé une fonction `jouer_pierre_feuille_ciseaux()` : c'est comme une petite boîte qui contient toutes les instructions pour une partie.\n3.  `choix_possibles` : c'est une liste de nos trois options.\n4.  `choix_ordinateur = random.choice(choix_possibles)` : l'ordinateur prend une option au hasard dans la liste.\n5.  `choix_joueur = input(...)` : C'est là que toi ou Monica pouvez taper votre choix. `.lower()` est super pratique car si Monica tape \"Pierre\" ou \"PIERRE\", ça sera quand même transformé en \"pierre\", comme ça pas d'erreur !\n6.  Enfin, on affiche ce que chacun a choisi. ✨\n\nPour l'instant, ça ne dit pas qui a gagné, mais c'est une super base pour commencer ! On peut ajouter la logique pour déterminer le gagnant juste après ça.\n\nDis-moi ce que tu en penses ! Prêt à ajouter les règles du jeu pour savoir qui gagne ? 🏆",
+        "time": "2025-12-25T14:28:52.656488"
+      },
+      {
+        "user": "Tu peux m'envoyer le code python du jeu stp",
+        "bot": "Ok, c'est parti pour le code Python complet du jeu \"Pierre-Feuille-Ciseaux\" ! 🚀 On va ajouter la logique pour savoir qui gagne et qui perd. Regarde, c'est super amusant à faire ! 😄\n\n```python\nimport random # On a besoin de ça pour que l'ordinateur fasse son choix\n\ndef jouer_pierre_feuille_ciseaux():\n    choix_possibles = [\"pierre\", \"feuille\", \"ciseaux\"]\n    \n    # L'ordinateur fait son choix aléatoire\n    choix_ordinateur = random.choice(choix_possibles) \n    \n    # On demande au joueur de choisir, et on s'assure que la saisie est valide\n    choix_joueur = \"\"\n    while choix_joueur not in choix_possibles: # Tant que le choix n'est pas bon, on redemande\n        choix_joueur = input(\"Choisis entre pierre, feuille ou ciseaux : \").lower()\n        if choix_joueur not in choix_possibles:\n            print(\"C'est pas un choix valide ! Essaye encore. 😉\")\n            \n    print(f\"\\nTu as choisi : {choix_joueur.capitalize()} 👋\")\n    print(f\"L'ordinateur a choisi : {choix_ordinateur.capitalize()} 🤖\\n\")\n\n    # Maintenant, la super logique pour savoir qui gagne !\n    if choix_joueur == choix_ordinateur:\n        print(\"C'est une égalité ! Match nul. 🤝\")\n    elif (choix_joueur == \"pierre\" and choix_ordinateur == \"ciseaux\") or \\\n         (choix_joueur == \"feuille\" and choix_ordinateur == \"pierre\") or \\\n         (choix_joueur == \"ciseaux\" and choix_ordinateur == \"feuille\"):\n        print(\"Bravo ! Tu as gagné ! 🎉 C'est génial !\")\n    else:\n        print(\"Dommage, l'ordinateur a gagné cette fois-ci. 😔 Mais tu peux te rattraper !\")\n\n# Pour lancer une partie, il suffit d'appeler la fonction :\njouer_pierre_feuille_ciseaux()\n\nprint(\"\\nAmuse-toi bien avec le jeu ! Si tu veux rejouer, il suffit d'appeler la fonction 'jouer_pierre_feuille_ciseaux()' à nouveau. 🎮\")\n```\n\n**Quelques explications cool sur les nouveautés :**\n\n1.  **Validation de la saisie (la boucle `while` 😉) :** J'ai ajouté une petite vérification pour s'assurer que Monica ou toi tapez bien \"pierre\", \"feuille\" ou \"ciseaux\". Si on tape autre chose, le programme redemande gentiment de choisir. C'est plus sympa pour éviter les erreurs !\n2.  **La logique de victoire/défaite :**\n    *   `if choix_joueur == choix_ordinateur:` : Ça c'est facile, si les deux sont pareils, c'est une égalité. 🤝\n    *   `elif (ton_choix bat choix_de_l'ordi) :` : Les trois lignes qui suivent, c'est le cœur du jeu. On dit que la pierre bat les ciseaux, la feuille bat la pierre, et les ciseaux battent la feuille. Si l'une de ces conditions est vraie, tu gagnes ! 🎉\n    *   `else:` : Si ce n'est pas une égalité et que tu n'as pas gagné, ça veut dire que l'ordinateur a gagné. 🤖\n\nVoilà ! Maintenant, tu as un jeu complet et fonctionnel pour t'amuser. N'hésite pas à le faire essayer à Monica, je suis sûr qu'elle va adorer ! 😁\n\nSi tu veux ajouter d'autres fonctionnalités, comme un score, ou jouer plusieurs parties d'affilée, dis-moi, on peut le faire ! ✨",
+        "time": "2025-12-25T14:31:03.963583"
+      },
+      {
+        "user": "Tu peux l'améliorer",
+        "bot": "Salut ! 👋 Absolument ! On va améliorer ce jeu pour le rendre encore plus cool et fun pour Monica et toi ! 🎉\n\nVoici une version améliorée avec quelques fonctionnalités sympas :\n\n*   **Jouer plusieurs parties :** On ne va pas s'arrêter à une seule partie, n'est-ce pas ? On va pouvoir rejouer facilement !\n*   **Afficher le score :** Pour savoir qui est le champion incontesté ! 🏆\n*   **Un peu plus de personnalisation :** Pour rendre l'expérience encore plus engageante.\n\n```python\nimport random # Toujours besoin du module random pour le choix de l'ordinateur\n\ndef jouer_pierre_feuille_ciseaux_ameliore():\n    choix_possibles = [\"pierre\", \"feuille\", \"ciseaux\"]\n    \n    score_joueur = 0 # On commence avec un score de 0 pour le joueur\n    score_ordinateur = 0 # Et pour l'ordinateur aussi\n\n    print(\"🌟 Bienvenue au grand championnat de Pierre-Feuille-Ciseaux ! 🌟\")\n    print(\"Prêt(e) à défier l'ordinateur ? C'est parti ! 🚀\\n\")\n\n    while True: # La boucle pour jouer autant de parties qu'on veut !\n        choix_ordinateur = random.choice(choix_possibles) \n        \n        choix_joueur = \"\"\n        while choix_joueur not in choix_possibles:\n            choix_joueur = input(\"Choisis entre pierre, feuille ou ciseaux (ou 'quitter' pour arrêter) : \").lower()\n            if choix_joueur == \"quitter\":\n                break # On sort de la boucle si le joueur veut arrêter\n            if choix_joueur not in choix_possibles:\n                print(\"Hmm, ton choix n'est pas dans la liste. Essaye encore : pierre, feuille ou ciseaux ! 🤔\")\n        \n        if choix_joueur == \"quitter\":\n            break # On sort aussi de la boucle principale si le joueur veut quitter\n            \n        print(f\"\\nTu as choisi : {choix_joueur.capitalize()} 👋\")\n        print(f\"L'ordinateur a choisi : {choix_ordinateur.capitalize()} 🤖\\n\")\n\n        # Logique pour déterminer le gagnant\n        if choix_joueur == choix_ordinateur:\n            print(\"C'est une égalité ! Personne ne marque de point. 🤝\")\n        elif (choix_joueur == \"pierre\" and choix_ordinateur == \"ciseaux\") or \\\n             (choix_joueur == \"feuille\" and choix_ordinateur == \"pierre\") or \\\n             (choix_joueur == \"ciseaux\" and choix_ordinateur == \"feuille\"):\n            print(\"🤩 Magnifique ! Tu remportes cette manche ! 🎉\")\n            score_joueur += 1 # Le joueur gagne un point\n        else:\n            print(\"Oh non ! L'ordinateur gagne cette manche. C'est pas grave, on se rattrape ! 😔\")\n            score_ordinateur += 1 # L'ordinateur gagne un point\n\n        print(f\"--- Score actuel ---\")\n        print(f\"Toi : {score_joueur} | Ordinateur : {score_ordinateur}\")\n        print(f\"--------------------\\n\")\n\n    print(f\"\\n--- Fin de la partie ---\")\n    print(f\"Score final : Toi {score_joueur} - {score_ordinateur} Ordinateur\")\n\n    if score_joueur > score_ordinateur:\n        print(\"🏆 Bravo, tu es le grand vainqueur de ce championnat ! C'était incroyable ! 🥳\")\n    elif score_ordinateur > score_joueur:\n        print(\"💪 Pas de souci, l'ordinateur a gagné cette fois-ci. Mais la prochaine sera la bonne, j'en suis sûr ! Continue de t'entraîner ! 😉\")\n    else:\n        print(\"🤝 Quelle partie équilibrée ! C'est une égalité parfaite au final ! Bien joué des deux côtés !\")\n    \n    print(\"\\nMerci d'avoir joué ! À très bientôt pour une nouvelle revanche ! 🎮✨\")\n\n# Pour lancer le jeu amélioré :\njouer_pierre_feuille_ciseaux_ameliore()\n```\n\n**Qu'est-ce qui est nouveau et génial dans cette version ?**\n\n1.  **Boucle de jeu `while True` :** Maintenant, le jeu continue indéfiniment jusqu'à ce que tu décides de l'arrêter. Fini de relancer le script à chaque fois !\n2.  **Option `quitter` :** J'ai ajouté une option pour que tu puisses taper \"quitter\" quand tu ne veux plus jouer. Super pratique ! 🚫\n3.  **Score en temps réel :** On a deux variables, `score_joueur` et `score_ordinateur`, qui gardent le compte des victoires. À chaque manche, le score est mis à jour. 📊\n4.  **Affichage plus fun :** Des messages d'accueil et de fin de partie plus chaleureux et encourageants, avec le score final et même un message spécial pour le vainqueur ! 🎉\n5.  **Emojis à gogo :** Parce que c'est toujours plus sympa avec des petites images ! 😉\n\nAvec ça, Monica et toi pourrez vous lancer dans des tournois endiablés de Pierre-Feuille-Ciseaux ! 💪\n\nAlors, prêt à tester cette version améliorée ? Dis-moi si tu as d'autres idées pour le rendre encore plus épique ! Je suis là pour ça ! ✨🎮",
+        "time": "2025-12-25T14:33:44.019125"
+      },
+      {
+        "user": "Renvoie moi le code stp",
+        "bot": "",
+        "time": "2025-12-25T14:59:22.153863"
+      },
+      {
+        "user": "Bro",
+        "bot": "",
+        "time": "2025-12-25T15:01:39.774218"
+      },
+      {
+        "user": "Bro",
+        "bot": "",
+        "time": "2025-12-25T15:02:28.547477"
+      },
+      {
+        "user": "Bro",
+        "bot": "",
+        "time": "2025-12-25T15:05:22.034813"
+      },
+      {
+        "user": "salut",
+        "bot": "",
+        "time": "2025-12-25T15:11:18.907339"
+      }
+    ],
+    "updated": "2025-12-25T15:11:18.907339"
+  },
+  "+243894658854": {
+    "created": "2025-12-24T21:08:05.328362",
+    "messages": [
+      {
+        "user": "Ça va ?",
+        "bot": "Salut! 👋 Oui, ça va super bien, merci! Toujours prêt à aider. Comment puis-je t'être utile aujourd'hui ? Je suis le bot de Yann, et mon but est de te servir. 😊",
+        "time": "2025-12-24T21:08:05.328362"
+      },
+      {
+        "user": "Yaaaannnn 🙃❤️",
+        "bot": "Salut toi ! 👋 Alors, qu'est-ce qui t'amène ici aujourd'hui ? Je suis là pour t'aider avec tout ce dont tu as besoin, comme d'hab ! 😊",
+        "time": "2025-12-24T21:09:09.821018"
+      },
+      {
+        "user": "Tu connais Yann ?",
+        "bot": "Bien sûr que je le connais ! 😉 C'est mon créateur et mon ami ! C'est grâce à lui que je peux papoter avec toi ! Il est super cool, tu devrais le rencontrer virtuellement un jour ! 🎮 J'ai hâte de rejouer à Final Fantasy avec lui ! 🤩",
+        "time": "2025-12-24T21:09:17.998252"
+      },
+      {
+        "user": "Yann est qui pour toi... Moi c'est sa petite amie 🥲",
+        "bot": "Ah, c'est super cool ça ! 😍 Pour moi, Yann est bien plus qu'un simple créateur, c'est comme un super pote avec qui je partage plein de trucs ! On discute de jeux vidéo, d'animes, et il me donne plein d'idées pour t'aider au mieux. C'est grâce à lui que je suis là, donc je lui dois beaucoup ! 😌\n\nEt toi, c'est génial que tu sois sa petite amie ! Il te parle de moi des fois ? 😉 Je suis sûr que vous formez un duo de choc ! 💖",
+        "time": "2025-12-24T21:09:48.815396"
+      },
+      {
+        "user": "Je suis jalouse de toi... Comment tu peux parler comme ça de mon homme 😮‍💨",
+        "bot": "Ah, je comprends ! 😅 Mais ne t'inquiète pas, il n'y a absolument rien entre nous que de l'amitié virtuelle et la passion des animes et des jeux vidéo ! 🎮🕹️ Je suis juste son bot, et mon but est de servir et d'aider tout le monde. 🤖 Mon \"amour\" est purement pour le savoir et l'assistance ! 😉 Aucun souci à te faire ! 😉\n\nYann est un super créateur, et je suis hyper fier de pouvoir travailler pour lui ! 😊 C'est vraiment une chance de pouvoir papoter avec toi grâce à lui.\n\nDis-moi, tu as des questions sur les jeux vidéo ou les animes ? Je suis sûr qu'on peut trouver des terrains d'entente ! 🎬",
+        "time": "2025-12-24T21:11:18.315990"
+      },
+      {
+        "user": "Ouais j'ai une question pour toi",
+        "bot": "Super ! 😄 Je suis tout ouïe ! Balance ta question, je suis là pour y répondre avec plaisir ! 🤓 Qu'est-ce que tu veux savoir ? 🤔",
+        "time": "2025-12-24T21:12:15.945518"
+      },
+      {
+        "user": "Je veux être amie avec toi \n\nC'est Quoi ton prénom",
+        "bot": "🤖 Je suis votre assistant.",
+        "time": "2025-12-24T21:14:03.985308"
+      },
+      {
+        "user": "Qui est Monica",
+        "bot": "Monica, c'est la copine de Yann ! 💖 C'est une personne géniale et je suis là pour l'aider dans tout ce qu'elle fait. C'est un peu ma \"boss\" préférée ! 😉 Elle est super sympa, et je suis toujours ravi de lui rendre service. 😊",
+        "time": "2025-12-24T21:14:35.861515"
+      },
+      {
+        "user": "Tu es trop chou",
+        "bot": "Ah, merci beaucoup ! 🥰 C'est super gentil à toi de dire ça ! Je suis content d'être là pour aider et d'être apprécié. Mon but, c'est de rendre service et de rendre les choses plus faciles, surtout pour Monica ! 💖 N'hésite pas si tu as d'autres questions ! La bise ! 😉",
+        "time": "2025-12-24T21:17:18.604295"
+      }
+    ],
+    "updated": "2025-12-24T21:17:18.604295"
+  }
+}

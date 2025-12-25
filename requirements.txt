@@ -1,0 +1,14 @@
+flask
+twilio
+python-dotenv
+selenium
+requests
+SpeechRecognition
+pydub
+gTTS
+pyttsx3
+pydub 
+numpy 
+scipy 
+librosa
+TTS
