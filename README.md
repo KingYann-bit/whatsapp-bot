@@ -2,9 +2,9 @@
 
 Un bot WhatsApp automatisé développé en Python utilisant plusieurs technologies pour fournir des fonctionnalités avancées comme la synthèse vocale (TTS) et d'autres capacités interactives.
 
-![GitHub](https://img.shields.io/github/license/ton-username/Whatsapp-bot)
+![GitHub](https://img.shields.io/github/license/KingYann-bit/Whatsapp-bot)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/ton-username/Whatsapp-bot)
+![GitHub last commit](https://img.shields.io/github/last-commit/KingYann-bit/Whatsapp-bot)
 
 ## ✨ Fonctionnalités
 
@@ -149,5 +149,6 @@ Pour toute question ou problème :
 ---
 
 **Note** : Remplace `ton-username` par ton vrai nom d'utilisateur GitHub dans tous les liens. Tu peux aussi ajouter des badges, des captures d'écran ou des démonstrations vidéo pour améliorer ton README.
+
 
 
