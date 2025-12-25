@@ -99,7 +99,7 @@ bot:
 
 tts:
   enabled: true
-  language: "fr-FR"
+  language: "fr-fr"
   speed: 1.0
 
 logging:
@@ -149,4 +149,5 @@ Pour toute question ou problème :
 ---
 
 **Note** : Remplace `ton-username` par ton vrai nom d'utilisateur GitHub dans tous les liens. Tu peux aussi ajouter des badges, des captures d'écran ou des démonstrations vidéo pour améliorer ton README.
+
 
