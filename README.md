@@ -43,6 +43,12 @@ Crée un fichier `.env` à la racine du projet :
 ```env
 # Exemple de configuration
 WHATSAPP_API_KEY=votre_clé_api
+TWILIO_ACCOUNT_SID=...
+TWILIO_AUTH_TOKEN=...
+TWILIO_WHATSAPP_NUMBER=...   # Twilio Sandbox WhatsApp number
+HF_API_KEY=hf_...
+openai_api_key=sk-proj-...
+ELEVENLABS_API_KEY=sk_...
 TTS_API_KEY=votre_clé_tts
 LOG_LEVEL=INFO
 ```
@@ -143,3 +149,4 @@ Pour toute question ou problème :
 ---
 
 **Note** : Remplace `ton-username` par ton vrai nom d'utilisateur GitHub dans tous les liens. Tu peux aussi ajouter des badges, des captures d'écran ou des démonstrations vidéo pour améliorer ton README.
+
